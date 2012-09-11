@@ -12,4 +12,5 @@
     Private Sub btnCalculate_Click(sender As System.Object, e As System.EventArgs) Handles btnCalculate.Click
         If Not IsNumeric(txtBase.Text) Or Not IsNumeric(txtExponent.Text) Then MessageBox.Show("Please check your input") Else displayResults(displayResults(displayResults(displayResults(displayResults(displayResults(displayResults(displayResults(displayResults(9)))))))))
     End Sub
+
 End Class
