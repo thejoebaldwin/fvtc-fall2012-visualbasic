@@ -1,6 +1,4 @@
 ﻿Public Class Form1
-
-
     Private arrScoops As ArrayList
 
     Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
@@ -20,7 +18,11 @@
     End Sub
 
     Private Sub btnRemove_Click(sender As System.Object, e As System.EventArgs) Handles btnRemove.Click
-        arrScoops.Remove(ListBox1.SelectedItem)
+        If (Not arrScoops.Contains(ListBox1.SelectedItem)) Then
+            lblTotal.Text = "There are no scoops of that kind ordered."
+        Else
+            arrScoops.Remove(ListBox1.SelectedItem)
+        End If
         displayScoops()
     End Sub
 End Class
