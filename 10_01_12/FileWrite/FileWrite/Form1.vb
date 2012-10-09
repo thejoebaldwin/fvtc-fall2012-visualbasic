@@ -30,4 +30,8 @@ Public Class Form1
 
 
     End Sub
+
+    Private Sub Form1_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        SaveFileDialog1.Filter = "text files|*.txt"
+    End Sub
 End Class

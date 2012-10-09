@@ -21,7 +21,11 @@
     ''' </summary>
     ''' <remarks></remarks>
     Private Sub displayScoops()
-     
+        Dim message As String = String.Empty
+        For i As Integer = 0 To arrScoops.Count - 1
+            message = message & arrScoops(i) & ", "
+        Next
+        lblScoops.Text = message
     End Sub
 
     ''' <summary>

@@ -37,7 +37,7 @@ Partial Class Form1
         Me.ListBox1.Items.AddRange(New Object() {"Chocolate", "Vanilla", "Mint", "Carmel Fudge Swirl", "Neopolitan"})
         Me.ListBox1.Location = New System.Drawing.Point(28, 12)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(182, 148)
+        Me.ListBox1.Size = New System.Drawing.Size(182, 124)
         Me.ListBox1.TabIndex = 0
         '
         'btnAdd
@@ -61,6 +61,7 @@ Partial Class Form1
         '
         'btnRemove
         '
+        Me.btnRemove.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnRemove.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRemove.Location = New System.Drawing.Point(249, 88)
         Me.btnRemove.Name = "btnRemove"
@@ -83,6 +84,7 @@ Partial Class Form1
         Me.AcceptButton = Me.btnAdd
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.CancelButton = Me.btnRemove
         Me.ClientSize = New System.Drawing.Size(443, 320)
         Me.Controls.Add(Me.lblTotal)
