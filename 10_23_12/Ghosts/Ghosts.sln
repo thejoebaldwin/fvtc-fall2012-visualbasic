@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ShapeObjectLibrary", "ShapeObjects\ShapeObjectLibrary.vbproj", "{BCA54905-228F-44A5-AE1E-0E0F91D7A6CE}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Ghost.UI", "GhostCollection\Ghost.UI.vbproj", "{B894EA21-73DB-4D1C-85D8-1A73D57CA2BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCA54905-228F-44A5-AE1E-0E0F91D7A6CE}.Debug|x86.ActiveCfg = Debug|x86
+		{BCA54905-228F-44A5-AE1E-0E0F91D7A6CE}.Debug|x86.Build.0 = Debug|x86
+		{BCA54905-228F-44A5-AE1E-0E0F91D7A6CE}.Release|x86.ActiveCfg = Release|x86
+		{BCA54905-228F-44A5-AE1E-0E0F91D7A6CE}.Release|x86.Build.0 = Release|x86
+		{B894EA21-73DB-4D1C-85D8-1A73D57CA2BE}.Debug|x86.ActiveCfg = Debug|x86
+		{B894EA21-73DB-4D1C-85D8-1A73D57CA2BE}.Debug|x86.Build.0 = Debug|x86
+		{B894EA21-73DB-4D1C-85D8-1A73D57CA2BE}.Release|x86.ActiveCfg = Release|x86
+		{B894EA21-73DB-4D1C-85D8-1A73D57CA2BE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
