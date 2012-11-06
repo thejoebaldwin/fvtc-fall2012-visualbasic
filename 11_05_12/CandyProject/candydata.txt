@@ -1,0 +1,6 @@
+sucker,red,6
+gum,cinnamon,2
+candy bar,butterfinger,10
+jolly rancher,watermelon,1
+gummy bears,rainbow,30
+
