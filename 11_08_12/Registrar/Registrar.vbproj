@@ -71,6 +71,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common.vb" />
     <Compile Include="frmEdit.Designer.vb">
       <DependentUpon>frmEdit.vb</DependentUpon>
     </Compile>
@@ -100,6 +101,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Student.vb" />
+    <Compile Include="studentCollection.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmEdit.resx">

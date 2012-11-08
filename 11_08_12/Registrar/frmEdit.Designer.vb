@@ -25,9 +25,9 @@ Partial Class frmEdit
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txtStudentID = New System.Windows.Forms.TextBox()
+        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Submit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -62,29 +62,30 @@ Partial Class frmEdit
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "Student ID"
         '
-        'TextBox1
+        'txtStudentID
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(186, 35)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(133, 29)
-        Me.TextBox1.TabIndex = 9
+        Me.txtStudentID.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtStudentID.Location = New System.Drawing.Point(186, 35)
+        Me.txtStudentID.Name = "txtStudentID"
+        Me.txtStudentID.ReadOnly = True
+        Me.txtStudentID.Size = New System.Drawing.Size(133, 29)
+        Me.txtStudentID.TabIndex = 9
         '
-        'TextBox2
+        'txtFirstName
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(186, 70)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(133, 29)
-        Me.TextBox2.TabIndex = 10
+        Me.txtFirstName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFirstName.Location = New System.Drawing.Point(186, 70)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.Size = New System.Drawing.Size(133, 29)
+        Me.txtFirstName.TabIndex = 10
         '
-        'TextBox3
+        'txtLastName
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(186, 105)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(133, 29)
-        Me.TextBox3.TabIndex = 11
+        Me.txtLastName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtLastName.Location = New System.Drawing.Point(186, 105)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(133, 29)
+        Me.txtLastName.TabIndex = 11
         '
         'btnCancel
         '
@@ -113,9 +114,9 @@ Partial Class frmEdit
         Me.ClientSize = New System.Drawing.Size(396, 262)
         Me.Controls.Add(Me.Submit)
         Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtLastName)
+        Me.Controls.Add(Me.txtFirstName)
+        Me.Controls.Add(Me.txtStudentID)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -128,9 +129,9 @@ Partial Class frmEdit
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents txtStudentID As System.Windows.Forms.TextBox
+    Friend WithEvents txtFirstName As System.Windows.Forms.TextBox
+    Friend WithEvents txtLastName As System.Windows.Forms.TextBox
     Friend WithEvents btnCancel As System.Windows.Forms.Button
     Friend WithEvents Submit As System.Windows.Forms.Button
 End Class
