@@ -42,9 +42,11 @@ Public Class studentCollection
     End Sub
 
     Public Sub Add(newStudent As Student, key As String)
+
         If _coll.Contains(key) Then
             Throw New duplicateException()
         Else
+            _coll = Nothing
             _coll.Add(newStudent, key)
 
         End If

@@ -2,10 +2,30 @@
     Private _firstName As String
     Private _lastName As String
     Private _studentID As String
+    Private _status As studentType
+
+    Public Enum StudentType As Integer
+        NewStudent
+        ReturningStudent
+        CurrentlyEnrolled
+        Graduated
+    End Enum
+
+
+    Public Property Status As StudentType
+        Get
+            Return _status
+        End Get
+        Set(value As StudentType)
+            _status = value
+        End Set
+    End Property
+
+
 
 
     Public Sub New()
-
+        _status = StudentType.CurrentlyEnrolled
     End Sub
 
     Public Sub New(ByVal sFirstName As String, ByVal sLastName As String, ByVal sStudentID As String)
