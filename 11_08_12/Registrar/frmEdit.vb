@@ -38,6 +38,9 @@
     End Sub
 
     Private Sub Submit_Click(sender As System.Object, e As System.EventArgs) Handles Submit.Click
+        Try
+
+        
         If _newStudent = True Then
             Dim tempStudent As Student = New Student(txtFirstName.Text, txtLastName.Text, txtStudentID.Text)
             collStudents.Add(tempStudent, tempStudent.StudentID)
@@ -47,7 +50,10 @@
             tempStudent.LastName = txtLastName.Text
         End If
 
-        Me.Close()
+            Me.Close()
+        Catch ex As duplicateException
+            MessageBox.Show("That Student ID already exists")
+        End Try
 
     End Sub
 End Class

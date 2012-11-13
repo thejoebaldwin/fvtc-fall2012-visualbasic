@@ -42,8 +42,12 @@ Public Class studentCollection
     End Sub
 
     Public Sub Add(newStudent As Student, key As String)
-        _coll.Add(newStudent, key)
+        If _coll.Contains(key) Then
+            Throw New duplicateException()
+        Else
+            _coll.Add(newStudent, key)
 
+        End If
     End Sub
 
     Default Public ReadOnly Property Item(key As String) As Student
