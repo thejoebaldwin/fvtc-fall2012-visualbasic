@@ -67,6 +67,7 @@ Partial Class frmEdit
         Me.txtStudentID.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtStudentID.Location = New System.Drawing.Point(186, 35)
         Me.txtStudentID.Name = "txtStudentID"
+        Me.txtStudentID.ReadOnly = True
         Me.txtStudentID.Size = New System.Drawing.Size(133, 29)
         Me.txtStudentID.TabIndex = 9
         '

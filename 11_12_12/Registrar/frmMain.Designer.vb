@@ -121,6 +121,7 @@ Partial Class frmMain
         '
         'btnEdit
         '
+        Me.btnEdit.Enabled = False
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.Location = New System.Drawing.Point(146, 164)
         Me.btnEdit.Name = "btnEdit"
@@ -158,7 +159,7 @@ Partial Class frmMain
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(98, 22)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.SaveToolStripMenuItem.Text = "&Save"
         '
         'ExitToolStripMenuItem
