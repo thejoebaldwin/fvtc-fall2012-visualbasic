@@ -100,6 +100,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Student.vb" />
+    <Compile Include="studentCollection.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="frmEdit.resx">
