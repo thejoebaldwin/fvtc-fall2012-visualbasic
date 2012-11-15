@@ -22,11 +22,7 @@
 
         ' Add any initialization after the InitializeComponent() call.
         _studentID = studentID
-        Dim tempStudent As Student = collStudents(_studentID)
-        txtFirstName.Text = tempStudent.FirstName
-        txtLastName.Text = tempStudent.LastName
-        txtStudentID.Text = _studentID
-        cbStatus.SelectedValue = tempStudent.Status
+        
     End Sub
 
     Private Sub btnCancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancel.Click
@@ -35,10 +31,25 @@
 
     Private Sub frmEdit_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
 
-        cbStatus.Items.Add(Student.StudentType.CurrentlyEnrolled)
-        cbStatus.Items.Add(Student.StudentType.Graduated)
-        cbStatus.Items.Add(Student.StudentType.NewStudent)
-        cbStatus.Items.Add(Student.StudentType.ReturningStudent)
+
+
+        'For Each value As Student.StudentType In [Enum].GetValues(Student.StudentType.CurrentlyEnrolled.GetType())
+        For Each value As Student.StudentType In [Enum].GetValues(Student.StudentType.CurrentlyEnrolled.GetType())
+            cbStatus.Items.Add(value)
+        Next
+
+        'or hard coded (not the best way)
+        'cbStatus.Items.Add(Student.StudentType.CurrentlyEnrolled)
+        'cbStatus.Items.Add(Student.StudentType.Graduated)
+        'cbStatus.Items.Add(Student.StudentType.NewStudent)
+        'cbStatus.Items.Add(Student.StudentType.ReturningStudent)
+
+        Dim tempStudent As Student = collStudents(_studentID)
+        txtFirstName.Text = tempStudent.FirstName
+        txtLastName.Text = tempStudent.LastName
+        txtStudentID.Text = _studentID
+        cbStatus.SelectedItem = tempStudent.Status
+
 
     End Sub
 
@@ -48,11 +59,13 @@
 
             If _newStudent = True Then
                 Dim tempStudent As Student = New Student(txtFirstName.Text, txtLastName.Text, txtStudentID.Text)
+                tempStudent.Status = cbStatus.SelectedItem
                 collStudents.Add(tempStudent, tempStudent.StudentID)
             Else
                 Dim tempStudent As Student = collStudents(_studentID)
                 tempStudent.FirstName = txtFirstName.Text
                 tempStudent.LastName = txtLastName.Text
+                tempStudent.Status = cbStatus.SelectedItem
             End If
 
             Me.Close()

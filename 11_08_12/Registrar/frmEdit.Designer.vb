@@ -70,7 +70,7 @@ Partial Class frmEdit
         Me.txtStudentID.Location = New System.Drawing.Point(186, 35)
         Me.txtStudentID.Name = "txtStudentID"
         Me.txtStudentID.ReadOnly = True
-        Me.txtStudentID.Size = New System.Drawing.Size(133, 29)
+        Me.txtStudentID.Size = New System.Drawing.Size(220, 29)
         Me.txtStudentID.TabIndex = 9
         '
         'txtFirstName
@@ -78,7 +78,7 @@ Partial Class frmEdit
         Me.txtFirstName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtFirstName.Location = New System.Drawing.Point(186, 70)
         Me.txtFirstName.Name = "txtFirstName"
-        Me.txtFirstName.Size = New System.Drawing.Size(133, 29)
+        Me.txtFirstName.Size = New System.Drawing.Size(220, 29)
         Me.txtFirstName.TabIndex = 10
         '
         'txtLastName
@@ -86,13 +86,13 @@ Partial Class frmEdit
         Me.txtLastName.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLastName.Location = New System.Drawing.Point(186, 105)
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(133, 29)
+        Me.txtLastName.Size = New System.Drawing.Size(220, 29)
         Me.txtLastName.TabIndex = 11
         '
         'btnCancel
         '
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnCancel.Location = New System.Drawing.Point(45, 229)
+        Me.btnCancel.Location = New System.Drawing.Point(89, 198)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(119, 59)
         Me.btnCancel.TabIndex = 12
@@ -102,7 +102,7 @@ Partial Class frmEdit
         'Submit
         '
         Me.Submit.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Submit.Location = New System.Drawing.Point(186, 229)
+        Me.Submit.Location = New System.Drawing.Point(230, 198)
         Me.Submit.Name = "Submit"
         Me.Submit.Size = New System.Drawing.Size(119, 59)
         Me.Submit.TabIndex = 13
@@ -125,14 +125,14 @@ Partial Class frmEdit
         Me.cbStatus.FormattingEnabled = True
         Me.cbStatus.Location = New System.Drawing.Point(186, 148)
         Me.cbStatus.Name = "cbStatus"
-        Me.cbStatus.Size = New System.Drawing.Size(133, 32)
+        Me.cbStatus.Size = New System.Drawing.Size(220, 32)
         Me.cbStatus.TabIndex = 15
         '
         'frmEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(396, 316)
+        Me.ClientSize = New System.Drawing.Size(441, 292)
         Me.Controls.Add(Me.cbStatus)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Submit)

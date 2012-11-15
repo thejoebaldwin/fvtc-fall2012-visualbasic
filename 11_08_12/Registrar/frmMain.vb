@@ -34,6 +34,8 @@
     End Sub
 
     Private Sub lstStudents_SelectedIndexChanged(sender As System.Object, e As System.EventArgs) Handles lstStudents.SelectedIndexChanged
+        btnEdit.Enabled = True
+        btnDelete.Enabled = True
         updateSummary()
     End Sub
 
@@ -65,6 +67,8 @@
         collStudents.Remove(studentID)
         updateListBox()
         clearSummary()
+        btnEdit.Enabled = False
+        btnDelete.Enabled = False
     End Sub
 
     Private Sub btnSave_Click(sender As System.Object, e As System.EventArgs) Handles btnSave.Click

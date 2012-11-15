@@ -17,14 +17,14 @@ Public Class studentCollection
         While reader.Peek > -1
             Dim tempData As String = reader.ReadLine
             Dim arrData As String() = tempData.Split(",")
-            If (arrData.Length = 3) Then
+            If (arrData.Length = 4) Then
                 Dim tempStudent As Student = New Student(arrData(0), arrData(1), arrData(2))
+                Dim tempStatus As Student.StudentType = [Enum].Parse(Student.StudentType.CurrentlyEnrolled.GetType(), arrData(3))
+                tempStudent.Status = tempStatus
                 _coll.Add(tempStudent, tempStudent.StudentID)
             End If
         End While
         reader.Close()
-
-
     End Sub
 
     Public Sub Save(fileName As String)
@@ -32,7 +32,7 @@ Public Class studentCollection
 
         For i As Integer = 1 To _coll.Count
             Dim tempStudent As Student = _coll(i)
-            sbStudent.AppendFormat("{0},{1},{2}", tempStudent.FirstName, tempStudent.LastName, tempStudent.StudentID)
+            sbStudent.AppendFormat("{0},{1},{2},{3}", tempStudent.FirstName, tempStudent.LastName, tempStudent.StudentID, tempStudent.Status)
             sbStudent.AppendLine("")
         Next
         Dim fileContents As String = sbStudent.ToString()

@@ -117,6 +117,7 @@ Partial Class frmMain
         '
         'btnEdit
         '
+        Me.btnEdit.Enabled = False
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.Location = New System.Drawing.Point(100, 164)
         Me.btnEdit.Name = "btnEdit"
@@ -127,6 +128,7 @@ Partial Class frmMain
         '
         'btnDelete
         '
+        Me.btnDelete.Enabled = False
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.Location = New System.Drawing.Point(189, 164)
         Me.btnDelete.Name = "btnDelete"
