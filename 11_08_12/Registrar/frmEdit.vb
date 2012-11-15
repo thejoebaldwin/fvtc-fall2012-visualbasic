@@ -34,15 +34,28 @@
 
 
         'For Each value As Student.StudentType In [Enum].GetValues(Student.StudentType.CurrentlyEnrolled.GetType())
-        For Each value As Student.StudentType In [Enum].GetValues(Student.StudentType.CurrentlyEnrolled.GetType())
+        For Each value As Student.StudentType In
+            [Enum].GetValues(Student.StudentType.CurrentlyEnrolled.GetType())
+
             cbStatus.Items.Add(value)
+
         Next
+
+
+
+
+
+
 
         'or hard coded (not the best way)
         'cbStatus.Items.Add(Student.StudentType.CurrentlyEnrolled)
         'cbStatus.Items.Add(Student.StudentType.Graduated)
         'cbStatus.Items.Add(Student.StudentType.NewStudent)
         'cbStatus.Items.Add(Student.StudentType.ReturningStudent)
+
+
+
+
 
         Dim tempStudent As Student = collStudents(_studentID)
         txtFirstName.Text = tempStudent.FirstName

@@ -1,5 +1,6 @@
 ﻿Public Class frmMain
 
+
     Private Sub frmMain_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
         collStudents = New studentCollection("../../students.txt")
         'collStudents.Add(New Student("Rick", "Thompson", "0123456"), "0123456")
@@ -11,7 +12,11 @@
         clearSummary()
 
 
-        
+
+
+
+
+
 
     End Sub
 
