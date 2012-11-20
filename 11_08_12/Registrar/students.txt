@@ -1,5 +1,5 @@
-Rick,Thompson,0123456,1
-Tony,Roberts,ABCDEFGGH,1
-John,Smith,11235433456,2
-Joe,Baldwin,asdasd,1
+Rick,Thompson,0123456,Enrolled
+Tony,Roberts,ABCDEFGGH,Enrolled
+John,Smith,11235433456,Enrolled
+Joe,Baldwin,asdasd,Enrolled
 
