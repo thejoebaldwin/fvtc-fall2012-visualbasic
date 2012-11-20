@@ -22,6 +22,18 @@ Public Class studentCollection
                 Dim tempStatus As Student.StudentType = [Enum].Parse(Student.StudentType.CurrentlyEnrolled.GetType(), arrData(3))
                 tempStudent.Status = tempStatus
                 _coll.Add(tempStudent, tempStudent.StudentID)
+
+
+
+
+
+
+                tempStudent.Status = [Enum].Parse(Student.StudentType.CurrentlyEnrolled.GetType(),
+                                                   arrData(3))
+
+
+
+
             End If
         End While
         reader.Close()

@@ -1,5 +1,5 @@
-Rick,Thompson,0123456,NewStudent
-Tony,Roberts,ABCDEFGGH,NewStudent
-John,Smith,11235433456,NewStudent
-Joe,Baldwin,asdasd,ReturningStudent
+Rick,Thompson,0123456,1
+Tony,Roberts,ABCDEFGGH,1
+John,Smith,11235433456,2
+Joe,Baldwin,asdasd,1
 
