@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstMessages = New System.Windows.Forms.ListBox()
-        Me.Insert = New System.Windows.Forms.Button()
+        Me.btnInsert = New System.Windows.Forms.Button()
         Me.btnRefresh = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
@@ -42,15 +42,15 @@ Partial Class Form1
         Me.lstMessages.Size = New System.Drawing.Size(226, 220)
         Me.lstMessages.TabIndex = 0
         '
-        'Insert
+        'btnInsert
         '
-        Me.Insert.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Insert.Location = New System.Drawing.Point(453, 207)
-        Me.Insert.Name = "Insert"
-        Me.Insert.Size = New System.Drawing.Size(159, 67)
-        Me.Insert.TabIndex = 1
-        Me.Insert.Text = "btnInsert"
-        Me.Insert.UseVisualStyleBackColor = True
+        Me.btnInsert.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInsert.Location = New System.Drawing.Point(453, 207)
+        Me.btnInsert.Name = "btnInsert"
+        Me.btnInsert.Size = New System.Drawing.Size(159, 67)
+        Me.btnInsert.TabIndex = 1
+        Me.btnInsert.Text = "Insert"
+        Me.btnInsert.UseVisualStyleBackColor = True
         '
         'btnRefresh
         '
@@ -120,7 +120,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnRefresh)
-        Me.Controls.Add(Me.Insert)
+        Me.Controls.Add(Me.btnInsert)
         Me.Controls.Add(Me.lstMessages)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -129,7 +129,7 @@ Partial Class Form1
 
     End Sub
     Friend WithEvents lstMessages As System.Windows.Forms.ListBox
-    Friend WithEvents Insert As System.Windows.Forms.Button
+    Friend WithEvents btnInsert As System.Windows.Forms.Button
     Friend WithEvents btnRefresh As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtName As System.Windows.Forms.TextBox

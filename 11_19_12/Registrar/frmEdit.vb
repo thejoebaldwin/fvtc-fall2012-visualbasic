@@ -25,8 +25,7 @@
         ' This call is required by the designer.
         InitializeComponent()
 
-        For Each value As Student.EnumStudentType In
-   [Enum].GetValues(Student.EnumStudentType.Enrolled.GetType())
+        For Each value As Student.EnumStudentType In [Enum].GetValues(GetType(Student.EnumStudentType))
             cbStudentType.Items.Add(value)
         Next
 
