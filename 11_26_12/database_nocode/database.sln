@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "database", "database\database.vbproj", "{B9CEBF0B-4AA8-4373-9F43-1E7F0707DCAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9CEBF0B-4AA8-4373-9F43-1E7F0707DCAF}.Debug|x86.ActiveCfg = Debug|x86
+		{B9CEBF0B-4AA8-4373-9F43-1E7F0707DCAF}.Debug|x86.Build.0 = Debug|x86
+		{B9CEBF0B-4AA8-4373-9F43-1E7F0707DCAF}.Release|x86.ActiveCfg = Release|x86
+		{B9CEBF0B-4AA8-4373-9F43-1E7F0707DCAF}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
