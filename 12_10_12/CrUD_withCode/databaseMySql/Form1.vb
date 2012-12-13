@@ -15,9 +15,23 @@ Public Class Form1
         collID.Clear()
         lbData.Items.Clear()
         For Each dr As DataRow In ds.Tables(0).Rows
-            lbData.Items.Add(dr("message"))
-            collMessage.Add(dr("message"))
-            collName.Add(dr("name"))
+
+            'declare all variables we want from the database
+            Dim message As String = String.Empty
+            Dim name As String = String.Empty
+
+            'test all database values for dbnull
+            If Not IsDBNull(dr("message")) Then
+                message = dr("message")
+            End If
+            If Not IsDBNull(dr("name")) Then
+                name = dr("name")
+            End If
+
+
+            lbData.Items.Add(name)
+            collMessage.Add(message)
+            collName.Add(name)
             collID.Add(dr("id"))
         Next
     End Sub
