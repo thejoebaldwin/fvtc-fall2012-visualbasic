@@ -10,6 +10,22 @@ Public Class Form1
         lbData.Items.Clear()
         For Each dr As DataRow In ds.Tables(0).Rows
             Dim tempMessage As Message = New Message(dr("message"), dr("name"), dr("id"))
+
+            'declare a mysql date type to hold raw date data
+            Dim createDate As MySql.Data.Types.MySqlDateTime
+            'test for DB Null
+            If Not IsDBNull(dr("createdate")) Then
+                createDate = dr("createdate")
+            End If
+
+            'if a valid date time then use the mysql date in our own  private date variable
+            If (createDate.IsValidDateTime) Then
+                tempMessage.createDate = createDate
+            End If
+
+
+
+
             collMessages.Add(tempMessage, tempMessage.Id)
             lbData.Items.Add(tempMessage.Message)
         Next

@@ -5,6 +5,8 @@ Imports System.Data
 Public Class EC2MySQL
 
     'replace the <USERNAME> and <PASSWORD> with those provided out on blackboard
+    'added "Allow Zero Datetime=true" to handle 0000-00-00 dates from database
+    'side effect is it casts date values to mysql.data.type.mysqldate type
     Private Const CONNECTION_STRING = "server=23.23.147.156;user id=vb_user;password=test!234;database=vb_demo;pooling=false;Allow Zero Datetime=true"
 
     Private _connectionString As String
