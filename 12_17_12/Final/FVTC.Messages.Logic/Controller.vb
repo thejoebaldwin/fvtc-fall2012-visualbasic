@@ -16,13 +16,23 @@ Public Class Controller
         Return input
     End Function
 
+
+    Public Shared Function formatDateForMySQL(d As Date) As String
+        Dim formattedDate As String = String.Empty
+        formattedDate = String.Format("{0}-{1}-{2}", d.Year, d.Month, d.Day)
+        formattedDate = formattedDate.PadLeft(2, "0"c)
+        Return formattedDate
+    End Function
+
+
+
     Public Shared Sub AddNewMessage(message As String, name As String, createDate As Date)
         Dim command As String = String.Empty
         command = "INSERT INTO helloworld (message, name, createdate) VALUES ('{0}', '{1}', '{2}');"
-        Dim tempDateFormatString As String = String.Format("{0}-{1}-{2}", createDate.Year, createDate.Month, createDate.Day)
+        Dim formattedDateString As String = formatDateForMySQL(createDate)
         message = cleanInput(message)
         name = cleanInput(name)
-        command = String.Format(command, message, name, tempDateFormatString)
+        command = String.Format(command, message, name, formattedDateString)
         EC2MySQL.ExecuteSqlCommand(command)
     End Sub
 
