@@ -16,12 +16,13 @@ Public Class Controller
         Return input
     End Function
 
-    Public Shared Sub AddNewMessage(message As String, name As String)
+    Public Shared Sub AddNewMessage(message As String, name As String, createDate As Date)
         Dim command As String = String.Empty
-        command = "INSERT INTO `vb_demo`.`helloworld` (`message`, `name`) VALUES ('{0}', '{1}');"
+        command = "INSERT INTO helloworld (message, name, createdate) VALUES ('{0}', '{1}', '{2}');"
+        Dim tempDateFormatString As String = String.Format("{0}-{1}-{2}", createDate.Year, createDate.Month, createDate.Day)
         message = cleanInput(message)
         name = cleanInput(name)
-        command = String.Format(command, message, name)
+        command = String.Format(command, message, name, tempDateFormatString)
         EC2MySQL.ExecuteSqlCommand(command)
     End Sub
 

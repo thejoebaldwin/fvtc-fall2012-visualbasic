@@ -36,7 +36,7 @@ Public Class Form1
     End Sub
 
     Private Sub btnInsert_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnInsert.Click
-        Controller.AddNewMessage(txtMessage.Text, txtName.Text)
+        Controller.AddNewMessage(txtMessage.Text, txtName.Text, txtCreateDate.Text)
         RefreshData()
     End Sub
 
@@ -46,6 +46,7 @@ Public Class Form1
             MessageBox.Show("outside of index")
         Else
             Dim tempMessage As Message = collMessages(tempIndex + 1)
+            txtCreateDate.Text = tempMessage.createDate.ToString("d")
             txtName.Text = tempMessage.Name
             txtMessage.Text = tempMessage.Message
             lblID.Text = tempMessage.Id

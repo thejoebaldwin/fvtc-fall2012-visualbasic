@@ -27,12 +27,13 @@ Partial Class Form1
         Me.txtMessage = New System.Windows.Forms.TextBox()
         Me.btnInsert = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtCreateDate = New System.Windows.Forms.TextBox()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.lblID = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.txtCreateDate = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -78,6 +79,7 @@ Partial Class Form1
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.txtCreateDate)
         Me.GroupBox1.Controls.Add(Me.btnDelete)
         Me.GroupBox1.Controls.Add(Me.btnUpdate)
@@ -91,6 +93,14 @@ Partial Class Form1
         Me.GroupBox1.TabIndex = 11
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Command"
+        '
+        'txtCreateDate
+        '
+        Me.txtCreateDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCreateDate.Location = New System.Drawing.Point(27, 226)
+        Me.txtCreateDate.Name = "txtCreateDate"
+        Me.txtCreateDate.Size = New System.Drawing.Size(469, 29)
+        Me.txtCreateDate.TabIndex = 14
         '
         'btnDelete
         '
@@ -140,13 +150,14 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Query"
         '
-        'txtCreateDate
+        'Label1
         '
-        Me.txtCreateDate.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCreateDate.Location = New System.Drawing.Point(27, 206)
-        Me.txtCreateDate.Name = "txtCreateDate"
-        Me.txtCreateDate.Size = New System.Drawing.Size(469, 29)
-        Me.txtCreateDate.TabIndex = 14
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(37, 200)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(30, 13)
+        Me.Label1.TabIndex = 15
+        Me.Label1.Text = "Date"
         '
         'Form1
         '
@@ -174,5 +185,6 @@ Partial Class Form1
     Friend WithEvents btnDelete As System.Windows.Forms.Button
     Friend WithEvents btnUpdate As System.Windows.Forms.Button
     Friend WithEvents txtCreateDate As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
 
 End Class
